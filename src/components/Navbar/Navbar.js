@@ -87,15 +87,6 @@ class Navbar extends Component {
                 <li className="nav-item">Works</li>
                 <li className="nav-item">Contact</li>
                 <li className="nav-item">Resume</li>
-                {/*<li className="nav-item"><Link to="/">For Developers</Link></li>*/}
-                {/* <li className="nav-item has-submenu">
-                  // <a tabIndex="0">About <FontAwesomeIcon icon="chevron-down"/></a>
-                 // <ul className="submenu">
-                    // <li className="subitem"><a href="/">Contact</a></li>
-                    // <li className="subitem"><a href="/">Profile</a></li>
-                    // <li className="subitem"><a href="/">Log Out</a></li>
-                  // </ul>
-                // </li> */}
                 { toggle }
               </ul>
             </nav>

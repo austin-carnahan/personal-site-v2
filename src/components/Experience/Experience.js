@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./Experience.css";
+const info = require("../../data/info")
 
 class Experience extends Component {
     constructor(props) {
@@ -12,6 +13,15 @@ class Experience extends Component {
         return(
             <div>
             <h3>Experience</h3>
+
+            <div id="exp-table">
+                <div id="exp-list-wrapper">
+                    <ul id="exp-list">
+                    </ul>
+                </div>
+                <div id="exp-details"></div>
+                
+            </div>
             <p>
                 I'm baby coloring book kale chips squid cred, same street art crucifix sartorial tilde. Art party crucifix blue bottle, la croix brunch copper mug roof party viral distillery fanny pack Brooklyn. Flannel keytar DSA lyft snackwave asymmetrical tilde freegan hoodie Brooklyn. Glossier palo santo meggings four loko literally butcher offal vibecession occupy photo booth marfa kale chips tumeric knausgaard. Church-key microdosing sustainable JOMO vape neutra cloud bread whatever health goth live-edge helvetica cold-pressed DIY blue bottle knausgaard.
 
