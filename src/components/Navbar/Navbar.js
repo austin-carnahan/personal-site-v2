@@ -79,14 +79,14 @@ class Navbar extends Component {
               <ul className="menu">
                 <li className="logo">
                     <div id="logo-container">
-                        <img src="/images/robot1.png" id="logo-image" alt="robot" />
-                        <div id="logo-text">vaxbot</div>
+                    <FontAwesomeIcon id="logo-image" icon="robot"/>
                     </div>
                 </li>
                 <li className="nav-item">About</li>
                 <li className="nav-item">Experience</li>
                 <li className="nav-item">Works</li>
                 <li className="nav-item">Contact</li>
+                <li className="nav-item">Resume</li>
                 {/*<li className="nav-item"><Link to="/">For Developers</Link></li>*/}
                 {/* <li className="nav-item has-submenu">
                   // <a tabIndex="0">About <FontAwesomeIcon icon="chevron-down"/></a>

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faBars, faTimes, faCoffee, faEnvelope, faSpinner } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faBars, faTimes, faCoffee, faEnvelope, faSpinner, faRobot } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faBars, faTimes, faTwitter, faGithub, faCoffee, faEnvelope, faSpinner)
+library.add(faBars, faTimes, faTwitter, faGithub, faCoffee, faEnvelope, faSpinner, faRobot, faLinkedin)
 
 import './App.css';
 

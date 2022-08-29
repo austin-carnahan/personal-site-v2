@@ -1,0 +1,10 @@
+.sidebar {
+    position: sticky;
+    top: 40%;
+    width: 10%;
+    
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
