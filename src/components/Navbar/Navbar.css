@@ -1,0 +1,189 @@
+nav {
+    padding: 0 15px;
+    background: var(--alice-blue);
+  }
+  
+  .nav-item a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .menu,
+  .submenu{
+    list-style-type: none;
+  }
+  
+  #logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+  }
+  
+  .logo a, .logo a:hover, .logo a:visited, .logo a:link, .logo a:active {
+  
+      text-decoration: none!important;
+      -webkit-box-shadow: none!important;
+      box-shadow: none!important;
+      border:0!important;
+  }
+  
+  #logo-image {
+    height: 60px;
+  }
+  
+  #logo-text {
+    font-family: 'Lobster', cursive;
+    font-size: 42px;
+    color: var(--smokey-black);
+    text-decoration: none !important;
+    
+  }
+  
+  .nav-item {
+    color: var(--smokey-black);
+    padding: 10px;
+  }
+  
+  .nav-item a:hover,
+  .nav-item a:hover::after {
+    color: #ccc;
+  }
+  
+  /* collapsed menu */
+  
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+  }
+  
+  .menu li a{
+    display: block;
+    padding: 5px 5px;
+  }
+  
+  .menu li.subitem a{
+    display: block;
+    padding: 5px 5px;
+  }
+  
+  .toggle {
+    order: 1;
+    font-size: 20px;
+  }
+  
+  #toggle-icon {
+   color: black;
+  }
+  
+  .nav-item {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  /*
+    background: var(--tcam-blue);
+  */
+    z-index: 1;
+    display: none;
+  }
+  
+  .active .nav-item {
+    display: block;
+  }
+  
+  /* submenus */
+  
+  .submenu {
+     display: none;
+  }
+  
+  .submenu-active .submenu {
+    display: block;
+    padding-inline-start: 0;
+  }
+  
+  .has-submenu > a::after {
+  /*
+    font-family: "Font Awesome 5 Free";
+  */
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    color: black;
+    padding-left: 5px;
+  }
+  
+  .subitem a{
+    padding: 5px 10px;
+  }
+  
+  .submenu-active {
+  /*
+    background-color: var(--tcam-blue-dark);
+  */
+    border-radius: 3px;
+  }
+  
+  /* Full Size menu */
+  
+  @media all and (min-width: 928px) {
+    
+    .menu {
+      justify-content: center;
+    }
+    
+    .logo {
+      flex: 1;
+    }
+      
+    .nav-item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+      text-align: right;
+    }
+    
+    .submenu-active .submenu {
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: 48px;
+      padding: 12px;
+  /*
+      background: var(--tcam-blue-dark);
+  */
+    }
+    
+    .toggle {
+      display: none;
+    }
+    
+    .submenu-active {
+      border-radius: 0;
+    }
+    
+  }
+  /*
+  make logo larger if we arent on a really small display
+  */
+  @media (min-width: 360px) {
+    #logo-image {
+        height: 90px;
+    }
+    
+    #logo-text {
+      font-family: 'Lobster', cursive;
+      font-size: 56px;
+      color: var(--smokey-black);
+      text-decoration: none !important;
+    }
+  }
